@@ -365,7 +365,7 @@ This solution uses **signed** array offsets.  It is left as an exercise for the 
 
 And for the love of readability please DON'T use lowecase `l` and `u` because you are too lazy to type "lower" and "upper" for variable names.  (I use `min`, `mid`, and `max` instead for readable array offset names.)
 
-Lastly, please don't return magic numbers such as -1.  There is a reason const variable names were invented.
+Lastly, please don't return magic numbers such as -1.  There is a reason _const variables_ were invented.
 
 ```c
 #include <stdio.h>
