@@ -425,7 +425,7 @@ How does your algorithm handle:
 * trivial case of only 1 letter?
 * ties?
 
-Typical [overengineered crap](https://stackoverflow.com/questions/31840381/find-the-longest-sequence-of-same-characters-in-a-string/44536741)
+Avoid this typical [overengineered garbage code](https://stackoverflow.com/questions/31840381/find-the-longest-sequence-of-same-characters-in-a-string/44536741).
 
 ```c
 #include <stdio.h>
