@@ -456,9 +456,9 @@ int longest_run_with_consecutive( const char *text, char *found )
             len++;
     }
 
-    if (!max) max = len;  // Handle trivial case of only 1 letter
+    if (!max)   max   = len  ;  // val: Handle trivial case of only 1 letter
+    if (found) *found = which;  // key: Does caller want to know which character had longest run?
 
-    if (found) *found = which;
     return max;
 }
 
