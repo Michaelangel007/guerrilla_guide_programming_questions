@@ -18,6 +18,8 @@ Here are my answers.
 
 All programs can be run in the [Online C++ compiler](https://www.onlinegdb.com/online_c++_compiler)
 
+**NOTE:** FizzBuzz / FizzBuzzBazz was NOT included in the list.  My solutions are [here](https://github.com/Michaelangel007/fizzbuzz).
+
 # 1. Reverse String in Place
 
 ```c
