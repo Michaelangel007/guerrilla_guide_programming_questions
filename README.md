@@ -20,7 +20,7 @@ All programs can be run in the [Online C++ compiler](https://www.onlinegdb.com/o
 
 # 1. Reverse String in Place
 
-```
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -77,7 +77,8 @@ A proper solution would use `uint8_t`, `uint16_t`, `uint32_t`, and `uint64_` to 
 There are various ways to **pretty print** the output
 
 Simple:
-```
+
+```c
     for( int byte = 0; byte < 256; ++byte )
     {
         printf( "%02X: %d    ", byte, countbits8( byte ) );
@@ -123,7 +124,7 @@ F8: 5    F9: 6    FA: 6    FB: 7    FC: 6    FD: 7    FE: 7    FF: 8
 ```
 We can output a C table with a little bit of code cleanup:
 
-```
+```c
     const int NUM_COLUMNS = 8;
 
     printf( "{\n" );
@@ -204,7 +205,7 @@ Changing columns to 16 our fancy table16 produces this:
 
 Naive solution:
 
-```
+```c
 #include <stdio.h>
 
 int countbits8( int byte )
@@ -238,7 +239,7 @@ int main()
 
 Array 4 solution:
 
-```
+```c
 #include <stdio.h>
 
 int countbits8( int byte )
@@ -264,7 +265,7 @@ int main()
 
 Array 16 solution:
 
-```
+```c
 #include <stdio.h>
 
 const char NIBBLE_BITS_ON[16] =
@@ -309,7 +310,7 @@ int main()
 
 Array 256 with memoization solution:
 
-```
+```c
 #include <stdio.h>
 
 int countbits8( int byte )
@@ -426,7 +427,7 @@ How does your algorithm handle:
 
 Typical [overengineered crap](https://stackoverflow.com/questions/31840381/find-the-longest-sequence-of-same-characters-in-a-string/44536741)
 
-```
+```c
 #include <stdio.h>
 
 int longest_run_with_consecutive( const char *text, char *found )
@@ -518,7 +519,7 @@ int main()
 
 # 6. atoi()
 
-```
+```c
 #include <stdio.h>  // printf()
 #include <stdlib.h> // atoi()
 
@@ -597,9 +598,12 @@ For full robustness, such as handling  multiple signs, we could use a state mach
 
 ```
 
+... but that is left as an exercise for the reader.
+
+
 # 7. itoa()
 
-```
+```c
 #include <stdio.h>
 
 // Related:
