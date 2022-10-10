@@ -466,13 +466,13 @@ int longest_run_sans_consecutive( const char *text, char *found )
 {
     if (!text) return 0;
 
-    const int COUNT_SIZE = 256;  // 8-bit ASCII
+    const int        COUNT_SIZE = 256;  // 8-bit ASCII
           int total[ COUNT_SIZE ];
 
     for( int i = 0; i < COUNT_SIZE; ++i )
         total[ i ] = 0;
 
-    const char *head = text;
+    const unsigned char *head = (const unsigned char*)text;
     for( ; *head; head++ )
         total[ *head ]++;
 
@@ -512,6 +512,7 @@ int main()
     demo( text1 );
     demo( text2 );
     demo( "aaa" );
+    demo( "\xFF"); // Test 8-bit ASCII
 
     return 0;
 }
