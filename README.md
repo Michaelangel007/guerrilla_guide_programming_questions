@@ -585,7 +585,8 @@ int main()
 
 ```
 
-For full robustness, such as handling  multiple signs, we could use a state machine:
+For full robustness, such as handling  multiple signs, we could use a state machine ...
+
 ```
     enum STATE =
     {
